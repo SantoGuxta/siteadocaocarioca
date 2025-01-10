@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Amigo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6a0dad; /* Roxo */
+            --secondary-color: #ff8c00; /* Laranja */
+            --background-color: #ffffff; /* Branco */
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+        }
+
+        .navbar-brand, .nav-link {
+            color: var(--background-color) !important;
+        }
+
+        .hero {
+            background-image: url('CapaAdocaoCarioca.jpg'); /* imagem de capa*/
+            background-size: cover;
+            background-position: center;
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .pet-card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .pet-card .card-title {
+            color: var(--primary-color);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--background-color);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+       h2 {
+            color: var(--primary-color);
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 10vh;
+        }
+
+        .icon img {
+          width:  50px;
+          height: 50px;
+          
+         
+         
+          
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Adote um Amigo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: var(--background-color);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#adopt">Adote</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Encontre seu melhor amigo hoje</h1>
+        <br>
+        <br>
+        <a href="#adopt" class="btn btn-primary btn-lg">Veja os Animais</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center">Sobre Nós</h2>
+        <p class="text-center">Somos uma organização dedicada a encontrar lares amorosos para animais resgatados. Trabalhamos para melhorar a vida de cães, gatos e outros animais através da adoção responsável.</p>
+    </section>
+
+    <!-- Adopt Section -->
+    <section id="adopt" class="container my-5">
+        <h2 class="text-center">Animais Disponíveis para Adoção</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card pet-card">
+                    <img src="brucecachorro.jpg" class="card-img-top" alt="Animal">
+                    <div class="card-body">
+                        <h5 class="card-title">Bruce</h5>
+                        <p class="card-text">MACHO</p>
+                        <p class="card-text">Idade: 3 anos<br>Personalidade: Brincalhão</p>
+                        <a href="#contact" class="btn btn-primary">Adotar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card pet-card">
+                    <img src="savanahgato.jpg" class="card-img-top" alt="Animal">
+                    <div class="card-body">
+                        <h5 class="card-title">Savanah</h5>
+                        <p class="card-text">FÊMEA</p>
+                        <p class="card-text">Idade: 2 anos<br>Personalidade: Calma</p>
+                        <a href="#contact" class="btn btn-primary">Adotar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card pet-card">
+                    <img src="caramelocachorro.jpg" class="card-img-top" alt="Animal">
+                    <div class="card-body">
+                        <h5 class="card-title">Caramelo</h5>
+                        <p class="card-text">MACHO</p>
+                        <p class="card-text">Idade: 2 ano<br>Personalidade: Energético</p>
+                        <a href="#contact" class="btn btn-primary">Adotar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contato</h2>
+        <p class="text-center">Entre em contato para mais informações sobre adoção ou para saber como ajudar.</p>
+       
+        <di class="icon">
+
+            <a href="https://www.instagram.com/adocaocarioca/">
+                <img src="instagram laranja.png" alt="Instagram">
+            </a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSefpiaK5QdZtj2_Ftq8eTNEbmEmFQho5CZoXqgMop0YZZPzFw/viewform">
+                <img src="o-email laranja.png" alt="E-mail">
+                
+            </a>
+        </di>
+        <form action="send_email.php" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Seu email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Adote um Amigo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
